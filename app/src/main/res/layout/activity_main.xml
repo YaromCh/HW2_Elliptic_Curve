@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="AUTO (create >> public_K >> secret_K)"
+        android:textAllCaps="false"
+        android:id="@+id/auto_bt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="or split to steps:"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="create rand input"
+            android:id="@+id/create_bt"
+            android:textSize="10sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="calculate Public Key"
+            android:id="@+id/calculate_public_bt"
+            android:textSize="10sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="calculate secret key"
+            android:id="@+id/calculate_key_bt"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <View
+                android:id="@+id/view3"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_secondary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alice"
+                    android:layout_marginBottom="50dp"
+                    android:textSize="40sp"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Point G not exist"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:id="@+id/A_pointG_TV"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prime P not exist"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:id="@+id/A_prime_TV"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Key a not exist"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:id="@+id/A_Key_TV"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Public Key not exist"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/A_Public_TV"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="secret key not exist"
+                    android:layout_marginTop="50dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:id="@+id/A_matchP_TV"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bob"
+                    android:layout_marginBottom="50dp"
+                    android:textSize="40sp"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Point G not exist"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:id="@+id/B_pointG_TV"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prime P not exist"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:id="@+id/B_prime_TV"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Key b not exist"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:id="@+id/B_Key_TV"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Public Key not exist"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/B_Public_TV"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="secret key not exist"
+                    android:layout_marginTop="50dp"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:id="@+id/B_matchP_TV"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
